@@ -1,0 +1,653 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --black-text-color: #000000;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+/* зміна руки і курсора при наведенні*/
+button {
+  cursor: pointer;
+}
+/* Забирає проміжуток між картинками - строчний елемент */
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid red; */
+}
+
+
+/* head */
+body {
+  background-color: #e5e5e5;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+/* contacts */
+/* заб точки */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* заб підкреслення а сlass */
+.link {
+  text-decoration: none;
+}
+/* MAIN-NAV */
+.main-nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+}
+/* -----------header---------------- */
+.page-header {
+  border-bottom: 1px solid #ffffff;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+/*---------- logo------------------- */
+
+.web-color {
+  color: var(--accent-text-color);
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 0.83;
+  font-family: Raleway;
+  font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.studio-color {
+  color: var(--black-text-color);
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 0.83;
+}
+/* ---------------site nav--------------------- */
+/* site-nav */
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+.site-nav .item + .item {
+  /* background-color: tomato; */
+  margin-left: 50px;
+}
+
+.site-nav list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.site-nav a {
+  color: var(--primary-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-text-color);
+}
+/* current-поточне підсвічування(постійне синє) */
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+/* -------------site-contacts------------------- */
+
+.site-contact {
+  display: flex;
+  margin-left: auto;
+}
+.site-contact .link {
+  margin-left: 12px;
+}
+
+.site-contact list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+.site-contact a {
+  color: var(--primary-text-color);
+}
+.site-contact a:hover,
+.site-contact a:focus {
+  color: var(--accent-text-color);
+}
+.site-contact .link.current {
+  color: var(--accent-text-color);
+}
+/* -------------------- border-bottom--top-line---*/
+.top-line { 
+border-bottom :1px solid;
+position: absolute;
+width: 1600px;
+/* height: 80px; */
+/* left: 1.12px; */
+top: 0px;
+
+background: #FFFFFF;
+}
+/*---------------------MAIN------------------------ */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*-------------------section hero------------------- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.hero {
+  background-color: var(--black-text-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.button-primary {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-bg-color);
+  background-color: var(--accent-text-color);
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
+}
+
+/* ------------------section ------*/
+/* --------------------------h2 hidden--------- */
+.visuallly-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.info {
+  display: flex; 
+}   
+ .info-list {
+  align-items: center;
+  margin-left:  auto;
+  display: block;
+} 
+
+.info .item + .item {
+margin-left: 30px;
+}
+.info-list title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.section-list title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 0px;
+  margin-bottom: 10px;
+}
+.section-list text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+
+/* ------------------section job--------------- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.job-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  padding: 0;
+  margin: 50px;
+}
+.box {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  /* background-color: aqua; */
+}
+.work {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+.work:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* section */
+.section {
+  background: #f5f4fa;
+}
+
+/* job-titie */
+/* --------------------section team------------------ */
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container-box {
+  padding-top: 186px;
+  padding-bottom: 94px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+}
+.command {
+  /* background-color: aqua; */
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.manager {
+  width: calc((100%-90px) / 4);
+  margin-right: 30px;
+}
+.manager :nth-child(4n) {
+  margin-right: 0px;
+}
+
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+  padding: 0;
+  padding: 50px;
+}
+.name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-top:30px;
+  margin-bottom: 10px;
+}
+.p-title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+}
+/* button */
+.button-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button {
+  color: var(--primary-bg-color);
+}
+button:hover,
+button:focus {
+  background-color: var(--accent-text-color);
+  color: var(--primary-bg-color);
+}
+.button-all {
+  background: #2196f3;
+  color: var(--primary-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* footer */
+
+.footer {
+  background-color: var(--black-text-color);
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+.studio-footer {
+  color: var(--primary-bg-color);
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 0.83;
+}
+
+/* -------------foter-title -------------*/
+.footer-nav {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-bg-color);
+  padding-bottom: 9px;
+}
+
+.footer-title {
+  padding-top: 20px;
+}
+.footer-title a {
+  color: var(--primary-bg-color);
+}
+.footer-title a:hover,
+.footer-title a:focus {
+  color: var(--title-text-color);
+}
+.footer-title .link.current {
+  color: var(--title-text-color);
+}
+/* project */
+.project {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black-text-color);
+  margin-left: 24px;
+}
+.project-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-left: 24px;
+}
+
+/* -----------header---------------- */
+.page-header {
+  border-bottom: 1px solid #ffffff;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-bottom: 94px;
+}
+/* site-nav */
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.site-nav .item+.item {
+  /* background-color: tomato; */
+  margin-left: 50px;
+}
+
+/* --------------------------h2 hidden--------- */
+.visuallly-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 611px;
+  /* background-color: tomato; */
+  margin: 0px 8px  16px  8px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-elements {
+margin-right: 8px;
+}
+
+
+.button-all {
+  height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  border: 1px solid transparent;
+}
+.button-title{
+  white-space: nowrap;
+  height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 128px; 
+  text-align: center;
+  border: 1px solid transparent;
+}
+.addition {
+  height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 145px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.design{
+  height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 103px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.marketing {
+  height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 130px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+/* -----------addition---------- */
+.button-title .addition {
+  display: inline-block;
+  position: absolute;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 3%;
+  color: var(--primary-text-color);
+  background-color: var(--title-text-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 145px;
+  text-align: center;
+  border: 1px solid transparent;
+  }
+  /* -----design----------------- */
+ .button-title .design {
+  display: inline-block;
+  position: absolute;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 3%;
+  color: var(--primary-text-color);
+  background-color: var(--title-text-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 103px;
+  text-align: center;
+  border: 1px solid transparent;
+  }
+  /* --------marketing------------ */
+ .button-title .marketing {
+  display: inline-block;
+  position: absolute;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 3%;
+  color: var(--primary-text-color);
+  background-color: var(--title-text-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 130px;
+  text-align: center;
+  border: 1px solid transparent;
+ }
+
+
+/*------ list 9 iconok------- */
+
+.test-container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.list-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: teal; */
+  list-style: none;
+}
+.flex-elements {
+
+  width: calc((100% - 60px) / 3);
+  /* background-color: tomato; */
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.flex-elements:nth-child(3n) {
+  margin-right: 0;
+}
+.flex-elements .project {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.flex-elements .project-text {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.flex-elements:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.filter-nav {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+/* ------- border-bottom--line-portfolio--*/
+.line-portfolio {
+  border-bottom: 1px solid;
+  position: absolute;
+  width: 370px;
+  background: #EEEEEE;
+}
+
+
