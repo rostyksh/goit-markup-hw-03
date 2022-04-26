@@ -9,7 +9,7 @@ body {
   background-color:var(--primary-bg-color);
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 p,
@@ -20,7 +20,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin: 0px;
 }
 /* utils */
 img {
@@ -33,14 +33,13 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 address {
   font-style: normal;
 }
 .list {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 /* заб підкреслення а сlass */
 .link {
@@ -55,13 +54,12 @@ address {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
-  padding: 0;
+  border: 0px;
+  padding: 0px;
   white-space: nowrap;
   clip-path: inset(100%);
   overflow: hidden;
 }
-
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -147,6 +145,7 @@ address {
   margin-bottom: 30px;
 }
 .button-primary {
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -161,7 +160,7 @@ address {
   cursor: pointer;
 }
 /* --------------------------h2 hidden--------- */
-.info {
+.about-list {
   display: flex; 
 }   
 .about-title {
@@ -174,28 +173,27 @@ margin-bottom: 10px;
 }
 .about-text {
 line-height: 1.71;
-letter-spacing: 0.03em;
 }
 .about-item {
   width: 270px;
 }
-.about-item:not(:last child) {
+.about-item:not(:last-child) {
   margin-right: 30px;
 }
 /* ------------------section job--------------- */
 .job {
-  padding-top: 0;
+  padding-top: 0px;
 }
-.box {
+.job-list  {
   display: flex;
   align-items: center;
 }
-.work {
+.job-item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
-.work:nth-child(3n) {
-  margin-right: 0;
+.job-item:nth-child(3n) {
+  margin-right: 0px;
 }
 /* --------------------section team------------------ */
 .team {
@@ -211,11 +209,12 @@ width: calc((100%-90px) / 4);
 margin-right: 30px;
 background-color: var(--primary-bg-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px
+border-radius: 0px 0px 4px 4px;
 }
 .name-title,
 .p-title {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
@@ -224,40 +223,17 @@ border-radius: 0px 0px 4px 4px
 }
 .p-title {
   color: var(--title-text-color);
-  margin-bottom: 0;
+  margin-bottom: 0px;
+  font-weight: 400;
 }
 .text-thumb {
   padding: 30px 50px ;
 }
-/* button */
-.button-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.button {
-  color: var(--primary-bg-color);
-}
-button:hover,
-button:focus {
-  background-color: var(--accent-text-color);
-  color: var(--primary-bg-color);
-}
-.button-all {
-  background: #2196f3;
-  color: var(--primary-bg-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+
 /* footer */
 .footer {
   background-color: #2F303A;
-  padding: 60px 0;
+  padding: 60px 0px;
 }
 .footer .logo {
   color: var(--primary-bg-color);
@@ -269,7 +245,6 @@ button:focus {
 }
 .map-link,
 .contacts-link {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -285,7 +260,7 @@ button:focus {
 }
 /* project */
 .project {
-  font-weight: bold;
+  font-weight: 700 ;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -302,88 +277,42 @@ button:focus {
   padding: 20px 24px;
 }
 /* --------------------------h2 hidden--------- */
-.services-list {
+.portfolio-btn-list {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
-.button-elements {
-margin-right: 8px;
+.portfolio-btn-item:not(:last-child) {
+  margin-right: 8px;
 }
-.button-all {
-  height: 38px;
+.portfolio-btn {
+  font-family:inherit;
+  background: #f5f4fa;
   border-radius: 4px;
-  padding: 6px 22px;
-  min-width: 73px;
-  border: 1px solid transparent;
-}
-.button-title{
-  /* white-space: nowrap; */
-  height: 38px;
-  border-radius: 4px;
-  padding: 6px 22px;
-  min-width: 128px; 
-  text-align: center;
-  border: 1px solid transparent;
-}
-.addition {
-  height: 38px;
-  border-radius: 4px;
-  padding: 6px 22px;
-  min-width: 145px;
-  text-align: center;
-  border: 1px solid transparent;
-}
-.design{
-  height: 38px;
-  border-radius: 4px;
-  padding: 6px 22px;
-  min-width: 103px;
-  text-align: center;
-  border: 1px solid transparent;
-}
-.marketing {
-  height: 38px;
-  border-radius: 4px;
-  padding: 6px 22px;
-  min-width: 130px;
-  text-align: center;
-  border: 1px solid transparent;
-}
-/* -----------addition---------- */
-.button-title .addition {
-  display: inline-block;
-  position: absolute;
-  font-style: 500;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.62;
+
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  background-color: var(--title-text-color);
-  }
-  /* -----design----------------- */
- .button-title .design {
-  display: inline-block;
-  position: absolute;
-  font-style: 500;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  color: var(--primary-text-color);
-  background-color: var(--title-text-color);
-  }
-  /* --------marketing------------ */
- .button-title .marketing {
-  display: inline-block;
-  position: absolute;
-  font-style: 500;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  color: var(--primary-text-color);
-  background-color: var(--title-text-color);
- }
+
+  padding: 6px 22px;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--accent-text-color);
+  color: var(--primary-bg-color);
+}
+.portfolio-btn.current {
+  background-color: var(--accent-text-color);
+  color: var(--primary-bg-color);
+}
+
 /*------ list 9 iconok------- */
 .list-flex-container {
   display: flex;
@@ -398,4 +327,9 @@ margin-right: 8px;
   background:var(--primary-bg-color);
   border: 1px solid #EEEEEE;
 }
-
+.cards-text {
+padding: 20px 0px 20px 24px;
+}
+.project {
+  margin-bottom: 4px;
+}
